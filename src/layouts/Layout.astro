@@ -19,58 +19,82 @@ const { title } = Astro.props;
 	<body>
 		<header>
 			<div class="top-header">
-				<img src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.73/mercadolibre/logo_large_25years_v2.png" alt="">
+				<img
+					src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.6.73/mercadolibre/logo_large_25years_v2.png"
+					alt=""
+				/>
 				<div class="input">
-					<input placeholder="Escribe algo y Encuentra"/>
-					<button>
-
-					</button>
-					
+					<input placeholder="Escribe algo y Encuentra" />
+					<button> </button>
 				</div>
 				<p>publicidad</p>
 			</div>
 		</header>
-		<div class="banner">
+		<div class="h-72 bg-gradient-to-b to-60% from-[#e2d523] to-[rgb(221, 219, 219)] from-cyan-500 to blue-500 ">
 
 		</div>
-		<div class="cards container"> 
-			<div class="card">
-				1
-			</div>
-			<div class="card">
-				2
-			</div>
-			<div class="card">
-				3
-			</div>
-			<div class="card">
-				4
-			</div>
-			<div class="card">
-				5
-			</div>
-			<div class="card">
-				6
-			</div>
+		<div class="cards container">
+			<div class="card">1</div>
+			<div class="card">2</div>
+			<div class="card">3</div>
+			<div class="card">4</div>
+			<div class="card">5</div>
+			<div class="card">6</div>
+		</div>
+		<div
+			class="group transition-colors duration-1000 hover:bg-blue-600 hover:cursor-pointer rounded inline-flex items-center px-4 py-2 text-white bg-blue-500"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="size-4 mr-1 mt-1 group-hover:animate-spin"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+				></path>
+			</svg>
+
+			Presioname!
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="size-4 mt-0.5 ml-1"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+				>
+				</path>
+			</svg>
 		</div>
 		<!--<slot /> -->
 	</body>
 </html>
 <style>
-	html, body{
+	html,
+	body {
 		padding: 0;
 		margin: 0;
-		background-color:rgb(221, 219, 219) ;
+		background-color: rgb(221, 219, 219);
 	}
-	header{
+	header {
 		height: 80px;
 		background: #fcf268;
 		padding-top: 12px;
 	}
-	.header img{
+	.header img {
 		width: 120px;
 	}
-	.header input{
+	.header input {
 		box-sizing: border-box;
 		display: inline;
 		width: 100%;
@@ -79,11 +103,10 @@ const { title } = Astro.props;
 		border-bottom-left-radius: 3px;
 		height: 36px;
 		/*border: 1px solid rgb(223, 220, 220);*/
-		outline:none;
-
+		outline: none;
 	}
 
-	.header button{
+	.header button {
 		display: inline;
 		width: 32px;
 		border: none;
@@ -93,30 +116,33 @@ const { title } = Astro.props;
 		border-bottom-right-radius: 3px;
 	}
 
-	.input{
+	.input {
 		display: flex;
 		align-items: center;
 	}
-	
-	.banner{
+
+	/*.banner {
 		height: 280px;
-		background: linear-gradient(to bottom, #fcf268 0%, #fcf268 60%, rgb(221, 219, 219) 100%);
-		
-	}
-	.container{
+		background: linear-gradient(
+			to bottom,
+			#fcf268 0%,
+			#fcf268 60%,
+			rgb(221, 219, 219) 100%
+		);
+	}*/
+	.container {
 		max-width: 1200px;
 		margin: 0 auto;
-		
 	}
 
-	.cards{
-		display:flex;
+	.cards {
+		display: flex;
 		gap: 10px;
-		margin-top:  -80px ;
+		margin-top: -80px;
 		height: 240px;
 	}
 
-	.card{
+	.card {
 		/*min-width: 180px;*/
 		flex-grow: 1;
 		background-color: rgb(255, 255, 255);
@@ -126,11 +152,5 @@ const { title } = Astro.props;
 	.top-header {
 		background-color: blue;
 		column-count: 3;
-		
 	}
-
-	
-
-	
-
 </style>
